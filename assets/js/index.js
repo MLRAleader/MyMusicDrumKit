@@ -6,58 +6,58 @@ function handleKeyPress() {
       case "w":
         let tom1 = new Audio("./assets/sounds/tom-1.mp3");
         tom1.play();
-        document.querySelector(".w").classList.add("playing");
-        setTimeout(() => {
-          document.querySelector(".w").classList.remove("playing");
-        }, 150);
+        document.querySelector("." + event.key).classList.add("pressed");
+          setTimeout(() => {
+          document.querySelector("." + event.key).classList.remove("pressed");
+          }, 100);
         break;
       case "a":
         var tom2 = new Audio("./assets/sounds/tom-2.mp3");
         tom2.play();
-         document.querySelector(".a").classList.add("playing");
-        setTimeout(() => {
-          document.querySelector(".a").classList.remove("playing");
-        }, 150);
+         document.querySelector("." + event.key).classList.add("pressed");
+          setTimeout(() => {
+          document.querySelector("." + event.key).classList.remove("pressed");
+          }, 100);
         break;
       case "s":
         var tom3 = new Audio("./assets/sounds/tom-3.mp3");
         tom3.play();
-         document.querySelector(".s").classList.add("playing");
-        setTimeout(() => {
-          document.querySelector(".s").classList.remove("playing");
-        }, 150);
+         document.querySelector("." + event.key).classList.add("pressed");
+          setTimeout(() => {
+          document.querySelector("." + event.key).classList.remove("pressed");
+          }, 100);
         break;
       case "d":
         var tom4 = new Audio("./assets/sounds/tom-4.mp3");
         tom4.play();
-         document.querySelector(".d").classList.add("playing");
+         document.querySelector("." + event.key).classList.add("pressed");
         setTimeout(() => {
-          document.querySelector(".d").classList.remove("playing");
-        }, 150);
+          document.querySelector("." + event.key).classList.remove("pressed");
+        }, 100);
         break;
       case "j":
         var snare = new Audio("./assets/sounds/snare.mp3");
         snare.play();
-         document.querySelector(".j").classList.add("playing");
-        setTimeout(() => {
-          document.querySelector(".j").classList.remove("playing");
-        }, 150);
+         document.querySelector("." + event.key).classList.add("pressed");
+          setTimeout(() => {
+          document.querySelector("." + event.key).classList.remove("pressed");
+          }, 100);
         break;
       case "k":
         var crash = new Audio("./assets/sounds/crash.mp3");
         crash.play();
-         document.querySelector(".k").classList.add("playing");
-        setTimeout(() => {
-          document.querySelector(".k").classList.remove("playing");
-        }, 150);
+         document.querySelector("." + event.key).classList.add("pressed");
+          setTimeout(() => {
+          document.querySelector("." + event.key).classList.remove("pressed");
+          }, 100);
         break;
       case "l":
         var kick = new Audio("./assets/sounds/kick-bass.mp3");
         kick.play();
-         document.querySelector(".l").classList.add("playing");
-        setTimeout(() => {
-          document.querySelector(".l").classList.remove("playing");
-        }, 150);
+        document.querySelector("." + event.key).classList.add("pressed");
+          setTimeout(() => {
+          document.querySelector("." + event.key).classList.remove("pressed");
+          }, 100);
         break
       default:
        this.alert("You did not press the correct key (w,a,s,d,j,k,l)!");
@@ -101,13 +101,6 @@ function handleClick() {
          kick.play();
          break;
      }
-    
-      document.querySelector("." + this.innerHTML).classList.add("pressed");
-      setTimeout(() => {
-        
-        document.querySelector("." + this.innerHTML).classList.remove("pressed");
-        
-      }, 100);
       
     });
   }
